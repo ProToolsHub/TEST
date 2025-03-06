@@ -1,0 +1,64 @@
+<div class="tool-container mac-address-generator-tool">
+  <div class="tool-header">
+    <h2>Mac Address Generator</h2>
+    <p>Un outil utile pour les développeurs et professionnels IT</p>
+  </div>
+  
+  <div class="tool-content">
+    <!-- Contenu converti depuis Vue.js -->
+    <div class="tool-main">
+        <div flex flex-col justify-center gap-2>
+    <div flex items-center>
+      <label w-150px pr-12px text-right> Quantity:</label>
+      <n-input-number v-model min="1" max="100" flex-1 />
+    </div>
+
+    <c-input-text
+      v-model
+      label="MAC address prefix:"
+      placeholder="Set a prefix, e.g. 64:16:7F"
+      clearable
+      label-position="left"
+      spellcheck="false"
+      
+      raw-text
+      label-width="150px"
+      label-align="right"
+    />
+
+    <c-buttons-select
+      v-model
+      
+      label="Case:"
+      label-width="150px"
+      label-align="right"
+    />
+
+    <c-buttons-select
+      v-model
+      
+      label="Separator:"
+      label-width="150px"
+      label-align="right"
+    />
+
+    <c-card mt-5 flex data-test-id="ulids">
+      <pre m-0 m-x-auto>{{ macAddresses }}</pre>
+    </c-card>
+
+    <div flex justify-center gap-2>
+      <c-button data-test-id="refresh" >
+        Refresh
+      </c-button>
+      <c-button >
+        Copy
+      </c-button>
+    </div>
+  </div>
+    </div>
+  </div>
+</div>
+
+<style>
+
+</style>

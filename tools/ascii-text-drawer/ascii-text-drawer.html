@@ -1,0 +1,65 @@
+<div class="tool-container ascii-text-drawer-tool">
+  <div class="tool-header">
+    <h2>Ascii Text Drawer</h2>
+    <p>Create ASCII art text with many fonts and styles.</p>
+  </div>
+  
+  <div class="tool-content">
+    <!-- Contenu converti depuis Vue.js -->
+    <div class="tool-main">
+        <c-card style="max-width: 600px;">
+    <c-input-text
+      v-model
+      label="Your text:"
+      placeholder="Your text to draw"
+      raw-text
+      multiline
+      rows="4"
+    />
+
+    <n-divider />
+
+    <n-grid cols="4" x-gap="12" w-full>
+      <n-gi span="2">
+        <c-select
+          v-model
+          label-position="top"
+          label="Font:"
+          
+          searchable="true"
+          placeholder="Select font to use"
+        />
+      </n-gi>
+      <n-gi span="2">
+        <n-form-item label="Width:" label-placement="top" label-width="100" >
+          <n-input-number v-model min="0" max="10000" w-full placeholder="Width of the text" />
+        </n-form-item>
+      </n-gi>
+    </n-grid>
+
+    <n-divider />
+
+    <div  flex items-center justify-center>
+      <n-spin size="medium" />
+      <span class="ml-2">Loading font...</span>
+    </div>
+
+    <c-alert  mt-1 text-center type="error">
+      Current settings resulted in error.
+    </c-alert>
+
+    <n-form-item  label="Ascii Art text:">
+      <TextareaCopyable
+        
+        mb-1 mt-1
+        copy-placement="outside"
+      />
+    </n-form-item>
+  </c-card>
+    </div>
+  </div>
+</div>
+
+<style>
+
+</style>

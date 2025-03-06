@@ -1,0 +1,55 @@
+<div class="tool-container json-viewer-tool">
+  <div class="tool-header">
+    <h2>Json Viewer</h2>
+    <p>Un outil utile pour les développeurs et professionnels IT</p>
+  </div>
+  
+  <div class="tool-content">
+    <!-- Contenu converti depuis Vue.js -->
+    <div class="tool-main">
+        <div style="flex: 0 0 100%">
+    <div style="margin: 0 auto; max-width: 600px" flex justify-center gap-3>
+      <n-form-item label="Sort keys :" label-placement="left" label-width="100">
+        <n-switch v-model />
+      </n-form-item>
+      <n-form-item label="Indent size :" label-placement="left" label-width="100" >
+        <n-input-number v-model min="0" max="10" style="width: 100px" />
+      </n-form-item>
+    </div>
+  </div>
+
+  <n-form-item
+    label="Your raw JSON"
+    
+    
+  >
+    <c-input-text
+      ref="inputElement"
+      v-model
+      placeholder="Paste your raw JSON here..."
+      rows="20"
+      multiline
+      autocomplete="off"
+      autocorrect="off"
+      autocapitalize="off"
+      spellcheck="false"
+      monospace
+    />
+  </n-form-item>
+  <n-form-item label="Prettified version of your JSON">
+    <TextareaCopyable  language="json"  />
+  </n-form-item>
+    </div>
+  </div>
+</div>
+
+<style>
+.result-card {
+  position: relative;
+  .copy-button {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+  }
+}
+</style>

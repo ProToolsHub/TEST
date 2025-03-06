@@ -1,0 +1,59 @@
+<div class="tool-container url-parser-tool">
+  <div class="tool-header">
+    <h2>Url Parser</h2>
+    <p>Un outil utile pour les développeurs et professionnels IT</p>
+  </div>
+  
+  <div class="tool-content">
+    <!-- Contenu converti depuis Vue.js -->
+    <div class="tool-main">
+        <c-card>
+    <c-input-text
+      v-model
+      label="Your url to parse:"
+      placeholder="Your url to parse..."
+      raw-text
+      
+    />
+
+    <n-divider />
+
+    <InputCopyable
+      
+      
+      
+      
+      readonly
+      label-position="left"
+      label-width="110px"
+      mb-2
+      placeholder=" "
+    />
+
+    <div
+      
+      
+      mb-2
+      w-full
+      flex
+    >
+      <div style="flex: 1 0 110px">
+        <icon-mdi-arrow-right-bottom />
+      </div>
+
+      <InputCopyable  readonly />
+      <InputCopyable  readonly />
+    </div>
+  </c-card>
+    </div>
+  </div>
+</div>
+
+<style>
+.n-input-group-label {
+  text-align: right;
+}
+.n-input-group {
+  margin: 2px 0;
+}
+</style>

@@ -1,0 +1,624 @@
+[
+  {
+    "id": "ascii-text-drawer",
+    "name": "Ascii Text Drawer",
+    "path": "ascii-text-drawer",
+    "description": "Create ASCII art text with many fonts and styles."
+  }
+,
+  {
+    "id": "base64-file-converter",
+    "name": "Base64 File Converter",
+    "path": "base64-file-converter",
+    "description": "Un outil utile pour les développeurs et professionnels IT"
+  }
+,
+  {
+    "id": "base64-string-converter",
+    "name": "Base64 String Converter",
+    "path": "base64-string-converter",
+    "description": "Un outil utile pour les développeurs et professionnels IT"
+  }
+,
+  {
+    "id": "basic-auth-generator",
+    "name": "Basic Auth Generator",
+    "path": "basic-auth-generator",
+    "description": "Un outil utile pour les développeurs et professionnels IT"
+  }
+,
+  {
+    "id": "bcrypt",
+    "name": "Bcrypt",
+    "path": "bcrypt",
+    "description": "Un outil utile pour les développeurs et professionnels IT"
+  }
+,
+  {
+    "id": "benchmark-builder",
+    "name": "Benchmark Builder",
+    "path": "benchmark-builder",
+    "description": "Un outil utile pour les développeurs et professionnels IT"
+  }
+,
+  {
+    "id": "bip39-generator",
+    "name": "Bip39 Generator",
+    "path": "bip39-generator",
+    "description": "Un outil utile pour les développeurs et professionnels IT"
+  }
+,
+  {
+    "id": "camera-recorder",
+    "name": "Camera Recorder",
+    "path": "camera-recorder",
+    "description": "Un outil utile pour les développeurs et professionnels IT"
+  }
+,
+  {
+    "id": "case-converter",
+    "name": "Case Converter",
+    "path": "case-converter",
+    "description": "Un outil utile pour les développeurs et professionnels IT"
+  }
+,
+  {
+    "id": "chmod-calculator",
+    "name": "Chmod Calculator",
+    "path": "chmod-calculator",
+    "description": "Un outil utile pour les développeurs et professionnels IT"
+  }
+,
+  {
+    "id": "chronometer",
+    "name": "Chronometer",
+    "path": "chronometer",
+    "description": "Un outil utile pour les développeurs et professionnels IT"
+  }
+,
+  {
+    "id": "color-converter",
+    "name": "Color Converter",
+    "path": "color-converter",
+    "description": "Un outil utile pour les développeurs et professionnels IT"
+  }
+,
+  {
+    "id": "components",
+    "name": "Components",
+    "path": "components",
+    "description": "Un outil utile pour les développeurs et professionnels IT"
+  }
+,
+  {
+    "id": "crontab-generator",
+    "name": "Crontab Generator",
+    "path": "crontab-generator",
+    "description": "Un outil utile pour les développeurs et professionnels IT"
+  }
+,
+  {
+    "id": "date-time-converter",
+    "name": "Date Time Converter",
+    "path": "date-time-converter",
+    "description": "Un outil utile pour les développeurs et professionnels IT"
+  }
+,
+  {
+    "id": "device-information",
+    "name": "Device Information",
+    "path": "device-information",
+    "description": "Un outil utile pour les développeurs et professionnels IT"
+  }
+,
+  {
+    "id": "diff-viewer",
+    "name": "Diff Viewer",
+    "path": "diff-viewer",
+    "description": "Un outil utile pour les développeurs et professionnels IT"
+  }
+,
+  {
+    "id": "docker-run-to-docker-compose-converter",
+    "name": "Docker Run To Docker Compose Converter",
+    "path": "docker-run-to-docker-compose-converter",
+    "description": "Un outil utile pour les développeurs et professionnels IT"
+  }
+,
+  {
+    "id": "editor",
+    "name": "Editor",
+    "path": "editor",
+    "description": "Un outil utile pour les développeurs et professionnels IT"
+  }
+,
+  {
+    "id": "email-normalizer",
+    "name": "Email Normalizer",
+    "path": "email-normalizer",
+    "description": "Normalize email addresses to a standard format for easier comparison. Useful for deduplication and data cleaning."
+  }
+,
+  {
+    "id": "emoji-picker",
+    "name": "Emoji Picker",
+    "path": "emoji-picker",
+    "description": "Un outil utile pour les développeurs et professionnels IT"
+  }
+,
+  {
+    "id": "encryption",
+    "name": "Encryption",
+    "path": "encryption",
+    "description": "Un outil utile pour les développeurs et professionnels IT"
+  }
+,
+  {
+    "id": "eta-calculator",
+    "name": "Eta Calculator",
+    "path": "eta-calculator",
+    "description": "Un outil utile pour les développeurs et professionnels IT"
+  }
+,
+  {
+    "id": "git-memo",
+    "name": "Git Memo",
+    "path": "git-memo",
+    "description": "Un outil utile pour les développeurs et professionnels IT"
+  }
+,
+  {
+    "id": "hash-text",
+    "name": "Hash Text",
+    "path": "hash-text",
+    "description": "Un outil utile pour les développeurs et professionnels IT"
+  }
+,
+  {
+    "id": "hmac-generator",
+    "name": "Hmac Generator",
+    "path": "hmac-generator",
+    "description": "Un outil utile pour les développeurs et professionnels IT"
+  }
+,
+  {
+    "id": "html-entities",
+    "name": "Html Entities",
+    "path": "html-entities",
+    "description": "Un outil utile pour les développeurs et professionnels IT"
+  }
+,
+  {
+    "id": "html-wysiwyg-editor",
+    "name": "Html Wysiwyg Editor",
+    "path": "html-wysiwyg-editor",
+    "description": "Un outil utile pour les développeurs et professionnels IT"
+  }
+,
+  {
+    "id": "http-status-codes",
+    "name": "Http Status Codes",
+    "path": "http-status-codes",
+    "description": "Un outil utile pour les développeurs et professionnels IT"
+  }
+,
+  {
+    "id": "iban-validator-and-parser",
+    "name": "Iban Validator And Parser",
+    "path": "iban-validator-and-parser",
+    "description": "Un outil utile pour les développeurs et professionnels IT"
+  }
+,
+  {
+    "id": "integer-base-converter",
+    "name": "Integer Base Converter",
+    "path": "integer-base-converter",
+    "description": "Un outil utile pour les développeurs et professionnels IT"
+  }
+,
+  {
+    "id": "ipv4-address-converter",
+    "name": "Ipv4 Address Converter",
+    "path": "ipv4-address-converter",
+    "description": "Un outil utile pour les développeurs et professionnels IT"
+  }
+,
+  {
+    "id": "ipv4-range-expander",
+    "name": "Ipv4 Range Expander",
+    "path": "ipv4-range-expander",
+    "description": "Un outil utile pour les développeurs et professionnels IT"
+  }
+,
+  {
+    "id": "ipv4-subnet-calculator",
+    "name": "Ipv4 Subnet Calculator",
+    "path": "ipv4-subnet-calculator",
+    "description": "Un outil utile pour les développeurs et professionnels IT"
+  }
+,
+  {
+    "id": "ipv6-ula-generator",
+    "name": "Ipv6 Ula Generator",
+    "path": "ipv6-ula-generator",
+    "description": "Un outil utile pour les développeurs et professionnels IT"
+  }
+,
+  {
+    "id": "json-diff",
+    "name": "Json Diff",
+    "path": "json-diff",
+    "description": "Un outil utile pour les développeurs et professionnels IT"
+  }
+,
+  {
+    "id": "json-minify",
+    "name": "Json Minify",
+    "path": "json-minify",
+    "description": "Un outil utile pour les développeurs et professionnels IT"
+  }
+,
+  {
+    "id": "json-to-csv",
+    "name": "Json To Csv",
+    "path": "json-to-csv",
+    "description": "Un outil utile pour les développeurs et professionnels IT"
+  }
+,
+  {
+    "id": "json-to-toml",
+    "name": "Json To Toml",
+    "path": "json-to-toml",
+    "description": "Un outil utile pour les développeurs et professionnels IT"
+  }
+,
+  {
+    "id": "json-to-xml",
+    "name": "Json To Xml",
+    "path": "json-to-xml",
+    "description": "Convert JSON to XML"
+  }
+,
+  {
+    "id": "json-to-yaml-converter",
+    "name": "Json To Yaml Converter",
+    "path": "json-to-yaml-converter",
+    "description": "Un outil utile pour les développeurs et professionnels IT"
+  }
+,
+  {
+    "id": "json-viewer",
+    "name": "Json Viewer",
+    "path": "json-viewer",
+    "description": "Un outil utile pour les développeurs et professionnels IT"
+  }
+,
+  {
+    "id": "jwt-parser",
+    "name": "Jwt Parser",
+    "path": "jwt-parser",
+    "description": "Un outil utile pour les développeurs et professionnels IT"
+  }
+,
+  {
+    "id": "keycode-info",
+    "name": "Keycode Info",
+    "path": "keycode-info",
+    "description": "Un outil utile pour les développeurs et professionnels IT"
+  }
+,
+  {
+    "id": "list-converter",
+    "name": "List Converter",
+    "path": "list-converter",
+    "description": "Un outil utile pour les développeurs et professionnels IT"
+  }
+,
+  {
+    "id": "lorem-ipsum-generator",
+    "name": "Lorem Ipsum Generator",
+    "path": "lorem-ipsum-generator",
+    "description": "Un outil utile pour les développeurs et professionnels IT"
+  }
+,
+  {
+    "id": "mac-address-generator",
+    "name": "Mac Address Generator",
+    "path": "mac-address-generator",
+    "description": "Un outil utile pour les développeurs et professionnels IT"
+  }
+,
+  {
+    "id": "mac-address-lookup",
+    "name": "Mac Address Lookup",
+    "path": "mac-address-lookup",
+    "description": "Un outil utile pour les développeurs et professionnels IT"
+  }
+,
+  {
+    "id": "markdown-to-html",
+    "name": "Markdown To Html",
+    "path": "markdown-to-html",
+    "description": "Convert Markdown to Html and allow to print (as PDF)"
+  }
+,
+  {
+    "id": "math-evaluator",
+    "name": "Math Evaluator",
+    "path": "math-evaluator",
+    "description": "Un outil utile pour les développeurs et professionnels IT"
+  }
+,
+  {
+    "id": "meta-tag-generator",
+    "name": "Meta Tag Generator",
+    "path": "meta-tag-generator",
+    "description": "Un outil utile pour les développeurs et professionnels IT"
+  }
+,
+  {
+    "id": "mime-types",
+    "name": "Mime Types",
+    "path": "mime-types",
+    "description": "Un outil utile pour les développeurs et professionnels IT"
+  }
+,
+  {
+    "id": "numeronym-generator",
+    "name": "Numeronym Generator",
+    "path": "numeronym-generator",
+    "description": "Un outil utile pour les développeurs et professionnels IT"
+  }
+,
+  {
+    "id": "otp-code-generator-and-validator",
+    "name": "Otp Code Generator And Validator",
+    "path": "otp-code-generator-and-validator",
+    "description": "Un outil utile pour les développeurs et professionnels IT"
+  }
+,
+  {
+    "id": "password-strength-analyser",
+    "name": "Password Strength Analyser",
+    "path": "password-strength-analyser",
+    "description": "Un outil utile pour les développeurs et professionnels IT"
+  }
+,
+  {
+    "id": "pdf-signature-checker",
+    "name": "Pdf Signature Checker",
+    "path": "pdf-signature-checker",
+    "description": "Un outil utile pour les développeurs et professionnels IT"
+  }
+,
+  {
+    "id": "percentage-calculator",
+    "name": "Percentage Calculator",
+    "path": "percentage-calculator",
+    "description": "Un outil utile pour les développeurs et professionnels IT"
+  }
+,
+  {
+    "id": "phone-parser-and-formatter",
+    "name": "Phone Parser And Formatter",
+    "path": "phone-parser-and-formatter",
+    "description": "Un outil utile pour les développeurs et professionnels IT"
+  }
+,
+  {
+    "id": "qr-code-generator",
+    "name": "Qr Code Generator",
+    "path": "qr-code-generator",
+    "description": "Un outil utile pour les développeurs et professionnels IT"
+  }
+,
+  {
+    "id": "random-port-generator",
+    "name": "Random Port Generator",
+    "path": "random-port-generator",
+    "description": "Un outil utile pour les développeurs et professionnels IT"
+  }
+,
+  {
+    "id": "regex-memo",
+    "name": "Regex Memo",
+    "path": "regex-memo",
+    "description": "Javascript Regex/Regular Expression cheatsheet"
+  }
+,
+  {
+    "id": "regex-tester",
+    "name": "Regex Tester",
+    "path": "regex-tester",
+    "description": "Test your regular expressions with sample text."
+  }
+,
+  {
+    "id": "roman-numeral-converter",
+    "name": "Roman Numeral Converter",
+    "path": "roman-numeral-converter",
+    "description": "Un outil utile pour les développeurs et professionnels IT"
+  }
+,
+  {
+    "id": "rsa-key-pair-generator",
+    "name": "Rsa Key Pair Generator",
+    "path": "rsa-key-pair-generator",
+    "description": "Un outil utile pour les développeurs et professionnels IT"
+  }
+,
+  {
+    "id": "safelink-decoder",
+    "name": "Safelink Decoder",
+    "path": "safelink-decoder",
+    "description": "Decode Outlook SafeLink links"
+  }
+,
+  {
+    "id": "slugify-string",
+    "name": "Slugify String",
+    "path": "slugify-string",
+    "description": "Un outil utile pour les développeurs et professionnels IT"
+  }
+,
+  {
+    "id": "sql-prettify",
+    "name": "Sql Prettify",
+    "path": "sql-prettify",
+    "description": "Un outil utile pour les développeurs et professionnels IT"
+  }
+,
+  {
+    "id": "string-obfuscator",
+    "name": "String Obfuscator",
+    "path": "string-obfuscator",
+    "description": "Un outil utile pour les développeurs et professionnels IT"
+  }
+,
+  {
+    "id": "svg-placeholder-generator",
+    "name": "Svg Placeholder Generator",
+    "path": "svg-placeholder-generator",
+    "description": "Un outil utile pour les développeurs et professionnels IT"
+  }
+,
+  {
+    "id": "temperature-converter",
+    "name": "Temperature Converter",
+    "path": "temperature-converter",
+    "description": "Un outil utile pour les développeurs et professionnels IT"
+  }
+,
+  {
+    "id": "text-diff",
+    "name": "Text Diff",
+    "path": "text-diff",
+    "description": "Un outil utile pour les développeurs et professionnels IT"
+  }
+,
+  {
+    "id": "text-statistics",
+    "name": "Text Statistics",
+    "path": "text-statistics",
+    "description": "Un outil utile pour les développeurs et professionnels IT"
+  }
+,
+  {
+    "id": "text-to-binary",
+    "name": "Text To Binary",
+    "path": "text-to-binary",
+    "description": "Un outil utile pour les développeurs et professionnels IT"
+  }
+,
+  {
+    "id": "text-to-nato-alphabet",
+    "name": "Text To Nato Alphabet",
+    "path": "text-to-nato-alphabet",
+    "description": "Un outil utile pour les développeurs et professionnels IT"
+  }
+,
+  {
+    "id": "text-to-unicode",
+    "name": "Text To Unicode",
+    "path": "text-to-unicode",
+    "description": "Un outil utile pour les développeurs et professionnels IT"
+  }
+,
+  {
+    "id": "token-generator",
+    "name": "Token Generator",
+    "path": "token-generator",
+    "description": "Un outil utile pour les développeurs et professionnels IT"
+  }
+,
+  {
+    "id": "toml-to-json",
+    "name": "Toml To Json",
+    "path": "toml-to-json",
+    "description": "Un outil utile pour les développeurs et professionnels IT"
+  }
+,
+  {
+    "id": "toml-to-yaml",
+    "name": "Toml To Yaml",
+    "path": "toml-to-yaml",
+    "description": "Un outil utile pour les développeurs et professionnels IT"
+  }
+,
+  {
+    "id": "ulid-generator",
+    "name": "Ulid Generator",
+    "path": "ulid-generator",
+    "description": "Un outil utile pour les développeurs et professionnels IT"
+  }
+,
+  {
+    "id": "url-encoder",
+    "name": "Url Encoder",
+    "path": "url-encoder",
+    "description": "Un outil utile pour les développeurs et professionnels IT"
+  }
+,
+  {
+    "id": "url-parser",
+    "name": "Url Parser",
+    "path": "url-parser",
+    "description": "Un outil utile pour les développeurs et professionnels IT"
+  }
+,
+  {
+    "id": "user-agent-parser",
+    "name": "User Agent Parser",
+    "path": "user-agent-parser",
+    "description": "Un outil utile pour les développeurs et professionnels IT"
+  }
+,
+  {
+    "id": "uuid-generator",
+    "name": "Uuid Generator",
+    "path": "uuid-generator",
+    "description": "Un outil utile pour les développeurs et professionnels IT"
+  }
+,
+  {
+    "id": "wifi-qr-code-generator",
+    "name": "Wifi Qr Code Generator",
+    "path": "wifi-qr-code-generator",
+    "description": "Un outil utile pour les développeurs et professionnels IT"
+  }
+,
+  {
+    "id": "xml-formatter",
+    "name": "Xml Formatter",
+    "path": "xml-formatter",
+    "description": "Un outil utile pour les développeurs et professionnels IT"
+  }
+,
+  {
+    "id": "xml-to-json",
+    "name": "Xml To Json",
+    "path": "xml-to-json",
+    "description": "Convert XML to JSON"
+  }
+,
+  {
+    "id": "yaml-to-json-converter",
+    "name": "Yaml To Json Converter",
+    "path": "yaml-to-json-converter",
+    "description": "Un outil utile pour les développeurs et professionnels IT"
+  }
+,
+  {
+    "id": "yaml-to-toml",
+    "name": "Yaml To Toml",
+    "path": "yaml-to-toml",
+    "description": "Un outil utile pour les développeurs et professionnels IT"
+  }
+,
+  {
+    "id": "yaml-viewer",
+    "name": "Yaml Viewer",
+    "path": "yaml-viewer",
+    "description": "Un outil utile pour les développeurs et professionnels IT"
+  }
+]

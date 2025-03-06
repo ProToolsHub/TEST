@@ -1,0 +1,45 @@
+<div class="tool-container roman-numeral-converter-tool">
+  <div class="tool-header">
+    <h2>Roman Numeral Converter</h2>
+    <p>Un outil utile pour les développeurs et professionnels IT</p>
+  </div>
+  
+  <div class="tool-content">
+    <!-- Contenu converti depuis Vue.js -->
+    <div class="tool-main">
+        <div>
+    <c-card title="Arabic to roman">
+      <div flex items-center justify-between>
+        <n-form-item v-bind="validationNumeral as any">
+          <n-input-number v-model  style="width: 200px"  />
+        </n-form-item>
+        <div class="result">
+          {{ outputRoman }}
+        </div>
+        <c-button autofocus  >
+          Copy
+        </c-button>
+      </div>
+    </c-card>
+    <c-card title="Roman to arabic" mt-5>
+      <div flex items-center justify-between>
+        <c-input-text v-model style="width: 200px"  />
+
+        <div class="result">
+          {{ outputNumeral }}
+        </div>
+        <c-button  >
+          Copy
+        </c-button>
+      </div>
+    </c-card>
+  </div>
+    </div>
+  </div>
+</div>
+
+<style>
+.result {
+  font-size: 22px;
+}
+</style>

@@ -1,0 +1,43 @@
+<div class="tool-container jwt-parser-tool">
+  <div class="tool-header">
+    <h2>Jwt Parser</h2>
+    <p>Un outil utile pour les développeurs et professionnels IT</p>
+  </div>
+  
+  <div class="tool-content">
+    <!-- Contenu converti depuis Vue.js -->
+    <div class="tool-main">
+        <c-card>
+    <c-input-text v-model label="JWT to decode"  placeholder="Put your token here..." rows="5" multiline raw-text autofocus mb-3 />
+
+    <n-table >
+      <tbody>
+        <template  >
+          <th colspan="2" class="table-header">
+            {{ section.title }}
+          </th>
+          <tr  >
+            <td class="claims" style="vertical-align: top;">
+              <span font-bold>
+                {{ claim }}
+              </span>
+              <span  ml-2 op-70>
+                ({{ claimDescription }})
+              </span>
+            </td>
+            <td style="word-wrap: break-word;word-break: break-all;">
+              <span>{{ value }}</span>
+              <span  ml-2 op-70>
+                ({{ friendlyValue }})
+              </span>
+            </td>
+          </tr>
+    </div>
+  </div>
+</div>
+
+<style>
+.table-header {
+  text-align: center;
+}
+</style>

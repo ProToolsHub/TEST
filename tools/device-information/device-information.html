@@ -1,0 +1,53 @@
+<div class="tool-container device-information-tool">
+  <div class="tool-header">
+    <h2>Device Information</h2>
+    <p>Un outil utile pour les développeurs et professionnels IT</p>
+  </div>
+  
+  <div class="tool-content">
+    <!-- Contenu converti depuis Vue.js -->
+    <div class="tool-main">
+        <c-card   >
+    <n-grid cols="1 400:2" x-gap="12" y-gap="12">
+      <n-gi   class="information">
+        <div class="label">
+          {{ label }}
+        </div>
+
+        <div class="value">
+          <n-ellipsis >
+            {{ value }}
+          </n-ellipsis>
+          <div v-else class="undefined-value">
+            unknown
+          </div>
+        </div>
+      </n-gi>
+    </n-grid>
+  </c-card>
+    </div>
+  </div>
+</div>
+
+<style>
+.information {
+  padding: 14px 16px;
+  border-radius: 4px;
+  background-color: #aaaaaa11;
+
+  .label {
+    font-size: 14px;
+    opacity: 0.8;
+    line-height: 1;
+    margin-bottom: 5px;
+  }
+  .value {
+    font-size: 20px;
+    font-weight: 400;
+  }
+
+  .undefined-value {
+    opacity: 0.8;
+  }
+}
+</style>

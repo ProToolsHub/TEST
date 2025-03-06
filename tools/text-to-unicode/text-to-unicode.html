@@ -1,0 +1,35 @@
+<div class="tool-container text-to-unicode-tool">
+  <div class="tool-header">
+    <h2>Text To Unicode</h2>
+    <p>Un outil utile pour les développeurs et professionnels IT</p>
+  </div>
+  
+  <div class="tool-content">
+    <!-- Contenu converti depuis Vue.js -->
+    <div class="tool-main">
+        <c-card title="Text to Unicode">
+    <c-input-text v-model multiline placeholder="e.g. 'Hello Avengers'" label="Enter text to convert to unicode" autosize autofocus raw-text test-id="text-to-unicode-input" />
+    <c-input-text v-model label="Unicode from your text" multiline raw-text readonly mt-2 placeholder="The unicode representation of your text will be here" test-id="text-to-unicode-output" />
+    <div mt-2 flex justify-center>
+      <c-button  >
+        Copy unicode to clipboard
+      </c-button>
+    </div>
+  </c-card>
+
+  <c-card title="Unicode to Text">
+    <c-input-text v-model multiline placeholder="Input Unicode" label="Enter unicode to convert to text" autosize raw-text test-id="unicode-to-text-input" />
+    <c-input-text v-model label="Text from your Unicode" multiline raw-text readonly mt-2 placeholder="The text representation of your unicode will be here" test-id="unicode-to-text-output" />
+    <div mt-2 flex justify-center>
+      <c-button  >
+        Copy text to clipboard
+      </c-button>
+    </div>
+  </c-card>
+    </div>
+  </div>
+</div>
+
+<style>
+
+</style>

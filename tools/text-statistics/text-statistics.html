@@ -1,0 +1,26 @@
+<div class="tool-container text-statistics-tool">
+  <div class="tool-header">
+    <h2>Text Statistics</h2>
+    <p>Un outil utile pour les développeurs et professionnels IT</p>
+  </div>
+  
+  <div class="tool-content">
+    <!-- Contenu converti depuis Vue.js -->
+    <div class="tool-main">
+        <c-card>
+    <c-input-text v-model multiline placeholder="Your text..." rows="5" />
+
+    <div mt-5 flex>
+      <n-statistic label="Character count"  flex-1 />
+      <n-statistic label="Word count"  flex-1 />
+      <n-statistic label="Line count"  flex-1 />
+      <n-statistic label="Byte size"  flex-1 />
+    </div>
+  </c-card>
+    </div>
+  </div>
+</div>
+
+<style>
+
+</style>

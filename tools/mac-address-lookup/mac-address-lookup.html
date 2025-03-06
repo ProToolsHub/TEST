@@ -1,0 +1,52 @@
+<div class="tool-container mac-address-lookup-tool">
+  <div class="tool-header">
+    <h2>Mac Address Lookup</h2>
+    <p>Un outil utile pour les développeurs et professionnels IT</p>
+  </div>
+  
+  <div class="tool-content">
+    <!-- Contenu converti depuis Vue.js -->
+    <div class="tool-main">
+        <div>
+    <c-input-text
+      v-model
+      label="MAC address:"
+      size="large"
+      placeholder="Type a MAC address"
+      clearable
+      autocomplete="off"
+      autocorrect="off"
+      autocapitalize="off"
+      spellcheck="false"
+      
+      mb-5
+    />
+
+    <div mb-5px>
+      Vendor info:
+    </div>
+    <c-card mb-5>
+      <div >
+        <div  >
+          {{ detail }}
+        </div>
+      </div>
+
+      <div v-else italic op-60>
+        Unknown vendor for this address
+      </div>
+    </c-card>
+
+    <div flex justify-center>
+      <c-button  >
+        Copy vendor info
+      </c-button>
+    </div>
+  </div>
+    </div>
+  </div>
+</div>
+
+<style>
+
+</style>

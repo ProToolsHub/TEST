@@ -1,0 +1,46 @@
+<div class="tool-container ipv6-ula-generator-tool">
+  <div class="tool-header">
+    <h2>Ipv6 Ula Generator</h2>
+    <p>Un outil utile pour les développeurs et professionnels IT</p>
+  </div>
+  
+  <div class="tool-content">
+    <!-- Contenu converti depuis Vue.js -->
+    <div class="tool-main">
+        <div>
+    <n-alert title="Info" type="info">
+      This tool uses the first method suggested by IETF using the current timestamp plus the mac address, sha1 hashed,
+      and the lower 40 bits to generate your random ULA.
+    </n-alert>
+
+    <c-input-text
+      v-model
+      placeholder="Type a MAC address"
+      clearable
+      label="MAC address:"
+      raw-text
+      my-8
+      
+    />
+
+    <div >
+      <InputCopyable
+        
+        
+        
+        
+        label-width="160px"
+        label-align="right"
+        label-position="left"
+        readonly
+        mb-2
+      />
+    </div>
+  </div>
+    </div>
+  </div>
+</div>
+
+<style>
+
+</style>

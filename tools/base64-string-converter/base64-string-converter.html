@@ -1,0 +1,78 @@
+<div class="tool-container base64-string-converter-tool">
+  <div class="tool-header">
+    <h2>Base64 String Converter</h2>
+    <p>Un outil utile pour les développeurs et professionnels IT</p>
+  </div>
+  
+  <div class="tool-content">
+    <!-- Contenu converti depuis Vue.js -->
+    <div class="tool-main">
+        <c-card title="String to base64">
+    <n-form-item label="Encode URL safe" label-placement="left">
+      <n-switch v-model />
+    </n-form-item>
+    <c-input-text
+      v-model
+      multiline
+      placeholder="Put your string here..."
+      rows="5"
+      label="String to encode"
+      raw-text
+      mb-5
+    />
+
+    <c-input-text
+      label="Base64 of string"
+      
+      multiline
+      readonly
+      placeholder="The base64 encoding of your string will be here"
+      rows="5"
+      mb-5
+    />
+
+    <div flex justify-center>
+      <c-button >
+        Copy base64
+      </c-button>
+    </div>
+  </c-card>
+
+  <c-card title="Base64 to string">
+    <n-form-item label="Decode URL safe" label-placement="left">
+      <n-switch v-model />
+    </n-form-item>
+    <c-input-text
+      v-model
+      multiline
+      placeholder="Your base64 string..."
+      rows="5"
+      
+      
+      label="Base64 string to decode"
+      mb-5
+    />
+
+    <c-input-text
+      v-model
+      label="Decoded string"
+      placeholder="The decoded string will be here"
+      multiline
+      rows="5"
+      readonly
+      mb-5
+    />
+
+    <div flex justify-center>
+      <c-button >
+        Copy decoded string
+      </c-button>
+    </div>
+  </c-card>
+    </div>
+  </div>
+</div>
+
+<style>
+
+</style>

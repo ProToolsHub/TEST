@@ -1,0 +1,98 @@
+<div class="tool-container mime-types-tool">
+  <div class="tool-header">
+    <h2>Mime Types</h2>
+    <p>Un outil utile pour les développeurs et professionnels IT</p>
+  </div>
+  
+  <div class="tool-content">
+    <!-- Contenu converti depuis Vue.js -->
+    <div class="tool-main">
+        <c-card>
+    <n-h2 style="margin-bottom: 0">
+      Mime type to extension
+    </n-h2>
+    <div style="opacity: 0.8">
+      Know which file extensions are associated to a mime-type
+    </div>
+    <c-select
+      v-model
+      searchable
+      my-4
+      
+      placeholder="Select your mimetype here... (ex: application/pdf)"
+    />
+
+    <div >
+      Extensions of files with the <n-tag round >
+        {{ selectedMimeType }}
+      </n-tag> mime-type:
+      <div style="margin-top: 10px">
+        <n-tag
+          
+          
+          round
+          
+          type="primary"
+          style="margin-right: 10px"
+        >
+          .{{ extension }}
+        </n-tag>
+      </div>
+    </div>
+  </c-card>
+
+  <c-card>
+    <n-h2 style="margin-bottom: 0">
+      File extension to mime type
+    </n-h2>
+    <div style="opacity: 0.8">
+      Know which mime type is associated to a file extension
+    </div>
+    <c-select
+      v-model
+      searchable
+      my-4
+      
+      placeholder="Select your mimetype here... (ex: application/pdf)"
+    />
+
+    <div >
+      Mime type associated to the extension <n-tag round >
+        {{ selectedExtension }}
+      </n-tag> file
+      extension:
+      <div style="margin-top: 10px">
+        <n-tag round  type="primary" style="margin-right: 10px">
+          {{ mimeTypeFound }}
+        </n-tag>
+      </div>
+    </div>
+  </c-card>
+
+  <div>
+    <n-table>
+      <thead>
+        <tr>
+          <th>Mime types</th>
+          <th>Extensions</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr  >
+          <td>{{ mimeType }}</td>
+          <td>
+            <n-tag   round  style="margin-right: 10px">
+              .{{ extension }}
+            </n-tag>
+          </td>
+        </tr>
+      </tbody>
+    </n-table>
+  </div>
+    </div>
+  </div>
+</div>
+
+<style>
+
+</style>

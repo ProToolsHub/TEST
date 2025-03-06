@@ -1,0 +1,47 @@
+<div class="tool-container pdf-signature-checker-tool">
+  <div class="tool-header">
+    <h2>Pdf Signature Checker</h2>
+    <p>Un outil utile pour les développeurs et professionnels IT</p>
+  </div>
+  
+  <div class="tool-content">
+    <!-- Contenu converti depuis Vue.js -->
+    <div class="tool-main">
+        <div style="flex: 0 0 100%">
+    <div mx-auto max-w-600px>
+      <c-file-upload title="Drag and drop a PDF file here, or click to select a file" accept=".pdf"  />
+
+      <c-card  mt-4 flex gap-2>
+        <div font-bold>
+          {{ file.name }}
+        </div>
+
+        <div>
+          {{ formatBytes(file.size) }}
+        </div>
+      </c-card>
+
+      <div >
+        <c-alert mt-4>
+          No signatures found in the provided file.
+        </c-alert>
+      </div>
+    </div>
+  </div>
+
+  <div  style="flex: 0 0 100%" mt-5 flex flex-col gap-4>
+    <div  >
+      <div mb-2 font-bold>
+        Signature {{ index + 1 }} certificates :
+      </div>
+
+      <pdf-signature-details  />
+    </div>
+  </div>
+    </div>
+  </div>
+</div>
+
+<style>
+
+</style>

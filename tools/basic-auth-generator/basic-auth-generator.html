@@ -1,0 +1,45 @@
+<div class="tool-container basic-auth-generator-tool">
+  <div class="tool-header">
+    <h2>Basic Auth Generator</h2>
+    <p>Un outil utile pour les développeurs et professionnels IT</p>
+  </div>
+  
+  <div class="tool-content">
+    <!-- Contenu converti depuis Vue.js -->
+    <div class="tool-main">
+        <div>
+    <c-input-text v-model label="Username" placeholder="Your username..." clearable raw-text mb-5 />
+    <c-input-text
+      v-model
+      label="Password"
+      placeholder="Your password..."
+      clearable
+      raw-text
+      mb-2
+      type="password"
+    />
+
+    <c-card>
+      <n-statistic label="Authorization header:" class="header">
+        <n-scrollbar x-scrollable style="max-width: 550px; margin-bottom: -10px; padding-bottom: 10px" trigger="none">
+          {{ header }}
+        </n-scrollbar>
+      </n-statistic>
+    </c-card>
+    <div mt-5 flex justify-center>
+      <c-button >
+        Copy header
+      </c-button>
+    </div>
+  </div>
+    </div>
+  </div>
+</div>
+
+<style>
+::v-deep(.n-statistic-value__content) {
+  font-family: monospace;
+  font-size: 17px !important;
+  white-space: nowrap;
+}
+</style>

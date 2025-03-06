@@ -1,0 +1,40 @@
+<div class="tool-container chronometer-tool">
+  <div class="tool-header">
+    <h2>Chronometer</h2>
+    <p>Un outil utile pour les développeurs et professionnels IT</p>
+  </div>
+  
+  <div class="tool-content">
+    <!-- Contenu converti depuis Vue.js -->
+    <div class="tool-main">
+        <div>
+    <c-card>
+      <div class="duration">
+        {{ formatMs(counter) }}
+      </div>
+    </c-card>
+    <div mt-5 flex justify-center gap-3>
+      <c-button  type="primary" >
+        Start
+      </c-button>
+      <c-button v-else type="warning" >
+        Stop
+      </c-button>
+
+      <c-button >
+        Reset
+      </c-button>
+    </div>
+  </div>
+    </div>
+  </div>
+</div>
+
+<style>
+.duration {
+  text-align: center;
+  font-size: 40px;
+  font-family: monospace;
+  margin: 20px 0;
+}
+</style>

@@ -1,0 +1,35 @@
+<div class="tool-container text-to-binary-tool">
+  <div class="tool-header">
+    <h2>Text To Binary</h2>
+    <p>Un outil utile pour les développeurs et professionnels IT</p>
+  </div>
+  
+  <div class="tool-content">
+    <!-- Contenu converti depuis Vue.js -->
+    <div class="tool-main">
+        <c-card title="Text to ASCII binary">
+    <c-input-text v-model multiline placeholder="e.g. 'Hello world'" label="Enter text to convert to binary" autosize autofocus raw-text test-id="text-to-binary-input" />
+    <c-input-text v-model label="Binary from your text" multiline raw-text readonly mt-2 placeholder="The binary representation of your text will be here" test-id="text-to-binary-output" />
+    <div mt-2 flex justify-center>
+      <c-button  >
+        Copy binary to clipboard
+      </c-button>
+    </div>
+  </c-card>
+
+  <c-card title="ASCII binary to text">
+    <c-input-text v-model multiline placeholder="e.g. '01001000 01100101 01101100 01101100 01101111'" label="Enter binary to convert to text" autosize raw-text  test-id="binary-to-text-input" />
+    <c-input-text v-model label="Text from your binary" multiline raw-text readonly mt-2 placeholder="The text representation of your binary will be here" test-id="binary-to-text-output" />
+    <div mt-2 flex justify-center>
+      <c-button  >
+        Copy text to clipboard
+      </c-button>
+    </div>
+  </c-card>
+    </div>
+  </div>
+</div>
+
+<style>
+
+</style>

@@ -1,0 +1,78 @@
+<div class="tool-container chmod-calculator-tool">
+  <div class="tool-header">
+    <h2>Chmod Calculator</h2>
+    <p>Un outil utile pour les développeurs et professionnels IT</p>
+  </div>
+  
+  <div class="tool-content">
+    <!-- Contenu converti depuis Vue.js -->
+    <div class="tool-main">
+        <div>
+    <n-table   single-column class="permission-table">
+      <thead>
+        <tr>
+          <th class="text-center" scope="col" />
+          <th class="text-center" scope="col">
+            Owner (u)
+          </th>
+          <th class="text-center" scope="col">
+            Group (g)
+          </th>
+          <th class="text-center" scope="col">
+            Public (o)
+          </th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr  >
+          <td class="line-header">
+            {{ title }}
+          </td>
+          <td   class="text-center">
+            <!-- <n-switch v-model /> -->
+            <n-checkbox v-model size="large" />
+          </td>
+        </tr>
+      </tbody>
+    </n-table>
+
+    <div class="octal-result">
+      {{ octal }}
+    </div>
+    <div class="octal-result">
+      {{ symbolic }}
+    </div>
+
+    <InputCopyable  readonly />
+  </div>
+    </div>
+  </div>
+</div>
+
+<style>
+.octal-result {
+  text-align: center;
+  font-size: 50px;
+  font-family: monospace;
+  color: v-bind('themeVars.primaryColor');
+  margin: 20px 0;
+}
+.permission-table {
+  td,
+  th {
+    padding: 15px;
+
+    @media screen and (max-width: 600px) {
+      padding: 5px;
+    }
+  }
+}
+.line-header {
+  font-weight: bold;
+  text-align: right;
+  max-width: 80px;
+}
+.text-center {
+  text-align: center;
+}
+</style>

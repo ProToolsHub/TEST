@@ -1,0 +1,37 @@
+<div class="tool-container rsa-key-pair-generator-tool">
+  <div class="tool-header">
+    <h2>Rsa Key Pair Generator</h2>
+    <p>Un outil utile pour les développeurs et professionnels IT</p>
+  </div>
+  
+  <div class="tool-content">
+    <!-- Contenu converti depuis Vue.js -->
+    <div class="tool-main">
+        <div style="flex: 0 0 100%">
+    <div item-style="flex: 1 1 0" style="max-width: 600px" mx-auto flex gap-3>
+      <n-form-item label="Bits :" v-bind="bitsValidationAttrs as any" label-placement="left" label-width="100">
+        <n-input-number v-model min="256" max="16384" step="8" />
+      </n-form-item>
+
+      <c-button >
+        Refresh key-pair
+      </c-button>
+    </div>
+  </div>
+
+  <div>
+    <h3>Public key</h3>
+    <TextareaCopyable  />
+  </div>
+
+  <div>
+    <h3>Private key</h3>
+    <TextareaCopyable  />
+  </div>
+    </div>
+  </div>
+</div>
+
+<style>
+
+</style>

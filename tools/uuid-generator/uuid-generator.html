@@ -1,0 +1,88 @@
+<div class="tool-container uuid-generator-tool">
+  <div class="tool-header">
+    <h2>Uuid Generator</h2>
+    <p>Un outil utile pour les développeurs et professionnels IT</p>
+  </div>
+  
+  <div class="tool-content">
+    <!-- Contenu converti depuis Vue.js -->
+    <div class="tool-main">
+        <div>
+    <c-buttons-select v-model  label="UUID version" label-width="100px" mb-2 />
+
+    <div mb-2 flex items-center>
+      <span w-100px>Quantity </span>
+      <n-input-number v-model flex-1   placeholder="UUID quantity" />
+    </div>
+
+    <div >
+      <div>
+        <c-buttons-select
+          v-model
+          :options="{
+            DNS: '6ba7b810-9dad-11d1-80b4-00c04fd430c8',
+            URL: '6ba7b811-9dad-11d1-80b4-00c04fd430c8',
+            OID: '6ba7b812-9dad-11d1-80b4-00c04fd430c8',
+            X500: '6ba7b814-9dad-11d1-80b4-00c04fd430c8',
+          }"
+          label="Namespace"
+          label-width="100px"
+          mb-2
+        />
+      </div>
+      <div flex-1>
+        <c-input-text
+          v-model
+          placeholder="Namespace"
+          label-width="100px"
+          label-position="left"
+          label=" "
+          
+          mb-2
+        />
+      </div>
+
+      <c-input-text
+        v-model
+        placeholder="Name"
+        label="Name"
+        label-width="100px"
+        label-position="left"
+        mb-2
+      />
+    </div>
+
+    <c-input-text
+      style="text-align: center; font-family: monospace"
+      
+      multiline
+      placeholder="Your uuids"
+      autosize
+      rows="1"
+      readonly
+      raw-text
+      monospace
+      my-3
+      class="uuid-display"
+    />
+
+    <div flex justify-center gap-3>
+      <c-button autofocus >
+        Copy
+      </c-button>
+      <c-button >
+        Refresh
+      </c-button>
+    </div>
+  </div>
+    </div>
+  </div>
+</div>
+
+<style>
+::v-deep(.uuid-display) {
+  textarea {
+    text-align: center;
+  }
+}
+</style>

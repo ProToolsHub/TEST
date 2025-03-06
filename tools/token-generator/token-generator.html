@@ -1,0 +1,70 @@
+<div class="tool-container token-generator-tool">
+  <div class="tool-header">
+    <h2>Token Generator</h2>
+    <p>Un outil utile pour les développeurs et professionnels IT</p>
+  </div>
+  
+  <div class="tool-content">
+    <!-- Contenu converti depuis Vue.js -->
+    <div class="tool-main">
+        <div>
+    <c-card>
+      <n-form label-placement="left" label-width="140">
+        <div flex justify-center>
+          <div>
+            <n-form-item >
+              <n-switch v-model />
+            </n-form-item>
+
+            <n-form-item >
+              <n-switch v-model />
+            </n-form-item>
+          </div>
+
+          <div>
+            <n-form-item >
+              <n-switch v-model />
+            </n-form-item>
+
+            <n-form-item >
+              <n-switch v-model />
+            </n-form-item>
+          </div>
+        </div>
+      </n-form>
+
+      <n-form-item  label-placement="left">
+        <n-slider v-model    />
+      </n-form-item>
+
+      <c-input-text
+        v-model
+        multiline
+        
+        readonly
+        rows="3"
+        autosize
+        class="token-display"
+      />
+
+      <div mt-5 flex justify-center gap-3>
+        <c-button >
+          {{ t('tools.token-generator.button.copy') }}
+        </c-button>
+        <c-button >
+          {{ t('tools.token-generator.button.refresh') }}
+        </c-button>
+      </div>
+    </c-card>
+  </div>
+    </div>
+  </div>
+</div>
+
+<style>
+::v-deep(.token-display) {
+  textarea {
+    text-align: center;
+  }
+}
+</style>

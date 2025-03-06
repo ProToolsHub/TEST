@@ -1,0 +1,54 @@
+<div class="tool-container ipv4-subnet-calculator-tool">
+  <div class="tool-header">
+    <h2>Ipv4 Subnet Calculator</h2>
+    <p>Un outil utile pour les développeurs et professionnels IT</p>
+  </div>
+  
+  <div class="tool-content">
+    <!-- Contenu converti depuis Vue.js -->
+    <div class="tool-main">
+        <div>
+    <c-input-text
+      v-model
+      label="An IPv4 address with or without mask"
+      placeholder="The ipv4 address..."
+      
+      mb-4
+    />
+
+    <div >
+      <n-table>
+        <tbody>
+          <tr  >
+            <td font-bold>
+              {{ label }}
+            </td>
+            <td>
+              <SpanCopyable   />
+              <span v-else op-70>
+                {{ undefinedFallback }}
+              </span>
+            </td>
+          </tr>
+        </tbody>
+      </n-table>
+
+      <div mt-3 flex items-center justify-between>
+        <c-button >
+          <n-icon  />
+          Previous block
+        </c-button>
+        <c-button >
+          Next block
+          <n-icon  />
+        </c-button>
+      </div>
+    </div>
+  </div>
+    </div>
+  </div>
+</div>
+
+<style>
+
+</style>

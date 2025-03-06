@@ -1,0 +1,48 @@
+<div class="tool-container string-obfuscator-tool">
+  <div class="tool-header">
+    <h2>String Obfuscator</h2>
+    <p>Un outil utile pour les développeurs et professionnels IT</p>
+  </div>
+  
+  <div class="tool-content">
+    <!-- Contenu converti depuis Vue.js -->
+    <div class="tool-main">
+        <div>
+    <c-input-text v-model raw-text placeholder="Enter string to obfuscate" label="String to obfuscate:" clearable multiline />
+
+    <div mt-4 flex gap-10px>
+      <div>
+        <div>Keep first:</div>
+        <n-input-number v-model min="0" />
+      </div>
+
+      <div>
+        <div>Keep last:</div>
+        <n-input-number v-model min="0" />
+      </div>
+
+      <div>
+        <div mb-5px>
+          Keep&nbsp;spaces:
+        </div>
+        <n-switch v-model />
+      </div>
+    </div>
+
+    <c-card  mt-60px max-w-600px flex items-center gap-5px font-mono>
+      <div break-anywhere text-wrap>
+        {{ obfuscatedString }}
+      </div>
+
+      <c-button >
+        <icon-mdi:content-copy />
+      </c-button>
+    </c-card>
+  </div>
+    </div>
+  </div>
+</div>
+
+<style>
+
+</style>

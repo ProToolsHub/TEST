@@ -1,0 +1,77 @@
+<div class="tool-container svg-placeholder-generator-tool">
+  <div class="tool-header">
+    <h2>Svg Placeholder Generator</h2>
+    <p>Un outil utile pour les développeurs et professionnels IT</p>
+  </div>
+  
+  <div class="tool-content">
+    <!-- Contenu converti depuis Vue.js -->
+    <div class="tool-main">
+        <div>
+    <n-form label-placement="left" label-width="100">
+      <div flex gap-3>
+        <n-form-item label="Width (in px)" flex-1>
+          <n-input-number v-model placeholder="SVG width..." min="1" />
+        </n-form-item>
+        <n-form-item label="Background" flex-1>
+          <n-color-picker v-model  />
+        </n-form-item>
+      </div>
+      <div flex gap-3>
+        <n-form-item label="Height (in px)" flex-1>
+          <n-input-number v-model placeholder="SVG height..." min="1" />
+        </n-form-item>
+        <n-form-item label="Text color" flex-1>
+          <n-color-picker v-model  />
+        </n-form-item>
+      </div>
+      <div flex gap-3>
+        <n-form-item label="Font size" flex-1>
+          <n-input-number v-model placeholder="Font size..." min="1" />
+        </n-form-item>
+
+        <c-input-text
+          v-model
+          label="Custom text"
+          
+          label-position="left"
+          label-width="100px"
+          label-align="right"
+          flex-1
+        />
+      </div>
+      <n-form-item label="Use exact size" label-placement="left">
+        <n-switch v-model />
+      </n-form-item>
+    </n-form>
+
+    <n-form-item label="SVG HTML element">
+      <TextareaCopyable  copy-placement="none" />
+    </n-form-item>
+    <n-form-item label="SVG in Base64">
+      <TextareaCopyable  copy-placement="none" />
+    </n-form-item>
+
+    <div flex justify-center gap-3>
+      <c-button >
+        Copy svg
+      </c-button>
+      <c-button >
+        Copy base64
+      </c-button>
+      <c-button >
+        Download svg
+      </c-button>
+    </div>
+  </div>
+
+  <img  alt="Image">
+    </div>
+  </div>
+</div>
+
+<style>
+.n-input-number {
+  width: 100%;
+}
+</style>

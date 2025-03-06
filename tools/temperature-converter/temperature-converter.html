@@ -1,0 +1,33 @@
+<div class="tool-container temperature-converter-tool">
+  <div class="tool-header">
+    <h2>Temperature Converter</h2>
+    <p>Un outil utile pour les développeurs et professionnels IT</p>
+  </div>
+  
+  <div class="tool-content">
+    <!-- Contenu converti depuis Vue.js -->
+    <div class="tool-main">
+        <div>
+    <n-input-group   mb-3 w-full>
+      <n-input-group-label style="width: 100px">
+        {{ title }}
+      </n-input-group-label>
+
+      <n-input-number
+        v-model
+        style="flex: 1"
+        @update
+      />
+
+      <n-input-group-label style="width: 50px">
+        {{ unit }}
+      </n-input-group-label>
+    </n-input-group>
+  </div>
+    </div>
+  </div>
+</div>
+
+<style>
+
+</style>

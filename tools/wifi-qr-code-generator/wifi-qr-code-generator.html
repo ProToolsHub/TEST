@@ -1,0 +1,130 @@
+<div class="tool-container wifi-qr-code-generator-tool">
+  <div class="tool-header">
+    <h2>Wifi Qr Code Generator</h2>
+    <p>Un outil utile pour les développeurs et professionnels IT</p>
+  </div>
+  
+  <div class="tool-content">
+    <!-- Contenu converti depuis Vue.js -->
+    <div class="tool-main">
+        <c-card>
+    <div grid grid-cols-1 gap-12>
+      <div>
+        <c-select
+          v-model
+          mb-4
+          label="Encryption method"
+          default-value="WPA"
+          label-position="left"
+          label-width="130px"
+          label-align="right"
+          :options="[
+            {
+              label: 'No password',
+              value: 'nopass',
+            },
+            {
+              label: 'WPA/WPA2',
+              value: 'WPA',
+            },
+            {
+              label: 'WEP',
+              value: 'WEP',
+            },
+            {
+              label: 'WPA2-EAP',
+              value: 'WPA2-EAP',
+            },
+          ]"
+        />
+        <div class="mb-6 flex flex-row items-center gap-2">
+          <c-input-text
+            v-model
+            label-position="left"
+            label-width="130px"
+            label-align="right"
+            label="SSID:"
+            rows="1"
+            autosize
+            placeholder="Your WiFi SSID..."
+            mb-6
+          />
+          <n-checkbox v-model>
+            Hidden SSID
+          </n-checkbox>
+        </div>
+        <c-input-text
+          
+          v-model
+          label-position="left"
+          label-width="130px"
+          label-align="right"
+          label="Password:"
+          rows="1"
+          autosize
+          type="password"
+          placeholder="Your WiFi Password..."
+          mb-6
+        />
+        <c-select
+          
+          v-model
+          label="EAP method"
+          label-position="left"
+          label-width="130px"
+          label-align="right"
+          
+          searchable mb-4
+        />
+        <div  class="mb-6 flex flex-row items-center gap-2">
+          <c-input-text
+            v-model
+            label-position="left"
+            label-width="130px"
+            label-align="right"
+            label="Identity:"
+            rows="1"
+            autosize
+            placeholder="Your EAP Identity..."
+            mb-6
+          />
+          <n-checkbox v-model>
+            Anonymous?
+          </n-checkbox>
+        </div>
+        <c-select
+          
+          v-model
+          label="EAP Phase 2 method"
+          label-position="left"
+          label-width="130px"
+          label-align="right"
+          
+          searchable mb-4
+        />
+        <n-form label-width="130" label-placement="left">
+          <n-form-item label="Foreground color:">
+            <n-color-picker v-model  />
+          </n-form-item>
+          <n-form-item label="Background color:">
+            <n-color-picker v-model  />
+          </n-form-item>
+        </n-form>
+      </div>
+      <div >
+        <div flex flex-col items-center gap-3>
+          <img alt="wifi-qrcode"  width="200">
+          <c-button >
+            Download qr-code
+          </c-button>
+        </div>
+      </div>
+    </div>
+  </c-card>
+    </div>
+  </div>
+</div>
+
+<style>
+
+</style>

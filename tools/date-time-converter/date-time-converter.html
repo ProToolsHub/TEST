@@ -1,0 +1,52 @@
+<div class="tool-container date-time-converter-tool">
+  <div class="tool-header">
+    <h2>Date Time Converter</h2>
+    <p>Un outil utile pour les développeurs et professionnels IT</p>
+  </div>
+  
+  <div class="tool-content">
+    <!-- Contenu converti depuis Vue.js -->
+    <div class="tool-main">
+        <div>
+    <div flex gap-2>
+      <c-input-text
+        v-model
+        autofocus
+        placeholder="Put your date string here..."
+        clearable
+        test-id="date-time-converter-input"
+        
+        @update
+      />
+
+      <c-select
+        v-model
+        style="flex: 0 0 170px"
+        
+        data-test-id="date-time-converter-format-select"
+      />
+    </div>
+
+    <n-divider />
+
+    <input-copyable
+      
+      
+      
+      label-width="150px"
+      label-position="left"
+      label-align="right"
+      
+      placeholder="Invalid date..."
+      
+      readonly
+      mt-2
+    />
+  </div>
+    </div>
+  </div>
+</div>
+
+<style>
+
+</style>

@@ -1,0 +1,34 @@
+<div class="tool-container random-port-generator-tool">
+  <div class="tool-header">
+    <h2>Random Port Generator</h2>
+    <p>Un outil utile pour les développeurs et professionnels IT</p>
+  </div>
+  
+  <div class="tool-content">
+    <!-- Contenu converti depuis Vue.js -->
+    <div class="tool-main">
+        <c-card>
+    <div class="port">
+      {{ port }}
+    </div>
+    <div flex justify-center gap-3>
+      <c-button >
+        Copy
+      </c-button>
+      <c-button >
+        Refresh
+      </c-button>
+    </div>
+  </c-card>
+    </div>
+  </div>
+</div>
+
+<style>
+.port {
+  text-align: center;
+  font-size: 26px;
+  font-weight: 400;
+  margin: 10px 0 25px;
+}
+</style>

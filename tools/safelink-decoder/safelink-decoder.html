@@ -1,0 +1,31 @@
+<div class="tool-container safelink-decoder-tool">
+  <div class="tool-header">
+    <h2>Safelink Decoder</h2>
+    <p>Decode Outlook SafeLink links</p>
+  </div>
+  
+  <div class="tool-content">
+    <!-- Contenu converti depuis Vue.js -->
+    <div class="tool-main">
+        <div>
+    <c-input-text
+      v-model
+      raw-text
+      placeholder="Your input Outlook SafeLink Url..."
+      autofocus
+      label="Your input Outlook SafeLink Url:"
+    />
+
+    <n-divider />
+
+    <n-form-item label="Output decoded URL:">
+      <TextareaCopyable   />
+    </n-form-item>
+  </div>
+    </div>
+  </div>
+</div>
+
+<style>
+
+</style>

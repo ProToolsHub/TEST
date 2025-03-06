@@ -1,0 +1,74 @@
+<div class="tool-container url-encoder-tool">
+  <div class="tool-header">
+    <h2>Url Encoder</h2>
+    <p>Un outil utile pour les développeurs et professionnels IT</p>
+  </div>
+  
+  <div class="tool-content">
+    <!-- Contenu converti depuis Vue.js -->
+    <div class="tool-main">
+        <c-card title="Encode">
+    <c-input-text
+      v-model
+      label="Your string :"
+      
+      multiline
+      autosize
+      placeholder="The string to encode"
+      rows="2"
+      mb-3
+    />
+
+    <c-input-text
+      label="Your string encoded :"
+      
+      multiline
+      autosize
+      readonly
+      placeholder="Your string encoded"
+      rows="2"
+      mb-3
+    />
+
+    <div flex justify-center>
+      <c-button >
+        Copy
+      </c-button>
+    </div>
+  </c-card>
+  <c-card title="Decode">
+    <c-input-text
+      v-model
+      label="Your encoded string :"
+      
+      multiline
+      autosize
+      placeholder="The string to decode"
+      rows="2"
+      mb-3
+    />
+
+    <c-input-text
+      label="Your string decoded :"
+      
+      multiline
+      autosize
+      readonly
+      placeholder="Your string decoded"
+      rows="2"
+      mb-3
+    />
+
+    <div flex justify-center>
+      <c-button >
+        Copy
+      </c-button>
+    </div>
+  </c-card>
+    </div>
+  </div>
+</div>
+
+<style>
+
+</style>

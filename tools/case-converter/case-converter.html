@@ -1,0 +1,36 @@
+<div class="tool-container case-converter-tool">
+  <div class="tool-header">
+    <h2>Case Converter</h2>
+    <p>Un outil utile pour les développeurs et professionnels IT</p>
+  </div>
+  
+  <div class="tool-content">
+    <!-- Contenu converti depuis Vue.js -->
+    <div class="tool-main">
+        <c-card>
+    <c-input-text
+      v-model
+      label="Your string:"
+      placeholder="Your string..."
+      raw-text
+      v-bind="inputLabelAlignmentConfig"
+    />
+
+    <div my-16px divider />
+
+    <InputCopyable
+      
+      
+      
+      
+      v-bind="inputLabelAlignmentConfig"
+      mb-1
+    />
+  </c-card>
+    </div>
+  </div>
+</div>
+
+<style>
+
+</style>

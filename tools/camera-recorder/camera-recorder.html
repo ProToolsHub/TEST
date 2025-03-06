@@ -1,0 +1,126 @@
+<div class="tool-container camera-recorder-tool">
+  <div class="tool-header">
+    <h2>Camera Recorder</h2>
+    <p>Un outil utile pour les développeurs et professionnels IT</p>
+  </div>
+  
+  <div class="tool-content">
+    <!-- Contenu converti depuis Vue.js -->
+    <div class="tool-main">
+        <div>
+    <c-card >
+      Your browser does not support recording video from camera
+    </c-card>
+
+    <c-card v-else-if="!permissionGranted" text-center>
+      You need to grant permission to use your camera and microphone
+
+      <c-alert  mt-4 text-left>
+        Your browser has blocked permission request or does not support it. You need to grant permission manually in
+        your browser settings (usually the lock icon in the address bar).
+      </c-alert>
+
+      <div v-else mt-4 flex justify-center>
+        <c-button >
+          Grant permission
+        </c-button>
+      </div>
+    </c-card>
+
+    <c-card v-else>
+      <div flex flex-col gap-2>
+        <c-select
+          v-model
+          label-position="left"
+          label-width="60px"
+          label="Video:"
+          
+          placeholder="Select camera"
+        />
+        <c-select
+          
+          v-model
+          label="Audio:"
+          label-position="left"
+          label-width="60px"
+          
+          placeholder="Select microphone"
+        />
+      </div>
+
+      <div  mt-3 flex justify-center>
+        <c-button type="primary" >
+          Start webcam
+        </c-button>
+      </div>
+
+      <div v-else>
+        <div my-2>
+          <video ref="video" autoplay controls playsinline max-h-full w-full />
+        </div>
+
+        <div flex items-center justify-between gap-2>
+          <c-button  >
+            <span mr-2> <icon-mdi-camera /></span>
+            Take screenshot
+          </c-button>
+
+          <div  flex justify-center gap-2>
+            <c-button  >
+              <span mr-2> <icon-mdi-video /></span>
+              Start recording
+            </c-button>
+
+            <c-button  >
+              <span mr-2> <icon-mdi-pause /></span>
+              Pause
+            </c-button>
+
+            <c-button  >
+              <span mr-2> <icon-mdi-play /></span>
+              Resume
+            </c-button>
+
+            <c-button  type="error" >
+              <span mr-2> <icon-mdi-record /></span>
+              Stop
+            </c-button>
+          </div>
+          <div v-else italic op-60>
+            Video recording is not supported in your browser
+          </div>
+        </div>
+      </div>
+    </c-card>
+
+    <div grid grid-cols-2 mt-5 gap-2>
+      <c-card  >
+        <img   max-h-full w-full alt="screenshot">
+
+        <video v-else  controls max-h-full w-full />
+
+        <div flex items-center justify-between>
+          <div font-bold>
+            {{ type === 'image' ? 'Screenshot' : 'Video' }}
+          </div>
+
+          <div flex gap-2>
+            <c-button >
+              <icon-mdi-download />
+            </c-button>
+
+            <c-button >
+              <icon-mdi-delete-outline />
+            </c-button>
+          </div>
+        </div>
+      </c-card>
+    </div>
+  </div>
+    </div>
+  </div>
+</div>
+
+<style>
+
+</style>

@@ -1,0 +1,80 @@
+<div class="tool-container benchmark-builder-tool">
+  <div class="tool-header">
+    <h2>Benchmark Builder</h2>
+    <p>Un outil utile pour les développeurs et professionnels IT</p>
+  </div>
+  
+  <div class="tool-content">
+    <!-- Contenu converti depuis Vue.js -->
+    <div class="tool-main">
+        <n-scrollbar style="flex: 1" x-scrollable>
+    <div mb-5 flex flex-1 flex-nowrap justify-center gap-12px>
+      <div  >
+        <c-card style="width: 294px">
+          <c-input-text
+            v-model
+            label-position="left"
+            label="Suite name"
+            placeholder="Suite name..."
+            clearable
+          />
+
+          <n-divider />
+          <n-form-item label="Suite values" >
+            <DynamicValues v-model />
+          </n-form-item>
+        </c-card>
+
+        <div flex justify-center>
+          <c-button  variant="text" >
+            <n-icon  depth="3" mr-2 size="18" />
+            Delete suite
+          </c-button>
+          <c-button
+            variant="text"
+            
+          >
+            <n-icon  depth="3" mr-2 size="18" />
+            Add suite
+          </c-button>
+        </div>
+      </div>
+    </div>
+  </n-scrollbar>
+
+  <div style="flex: 0 0 100%">
+    <div style="max-width: 600px; margin: 0 auto">
+      <div mx-auto max-w-sm flex justify-center gap-3>
+        <c-input-text v-model placeholder="Unit (eg: ms)" label="Unit" label-position="left" mb-4 />
+
+        <c-button
+          @click="
+            suites = [
+              { title: 'Suite 1', data: [] },
+              { title: 'Suite 2', data: [] },
+            ]
+          "
+        >
+          Reset suites
+        </c-button>
+      </div>
+
+      <c-table   />
+
+      <div mt-5 flex justify-center gap-3>
+        <c-button >
+          Copy as markdown table
+        </c-button>
+        <c-button >
+          Copy as bullet list
+        </c-button>
+      </div>
+    </div>
+  </div>
+    </div>
+  </div>
+</div>
+
+<style>
+
+</style>

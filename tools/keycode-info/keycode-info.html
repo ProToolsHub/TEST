@@ -1,0 +1,33 @@
+<div class="tool-container keycode-info-tool">
+  <div class="tool-header">
+    <h2>Keycode Info</h2>
+    <p>Un outil utile pour les développeurs et professionnels IT</p>
+  </div>
+  
+  <div class="tool-content">
+    <!-- Contenu converti depuis Vue.js -->
+    <div class="tool-main">
+        <div>
+    <c-card mb-5 text-center important:py-12>
+      <div  mb-2 text-3xl>
+        {{ event.key }}
+      </div>
+      <span lh-1 op-70>
+        Press the key on your keyboard you want to get info about this key
+      </span>
+    </c-card>
+
+    <n-input-group   style="margin-bottom: 5px">
+      <n-input-group-label style="flex: 0 0 150px">
+        {{ label }}
+      </n-input-group-label>
+      <InputCopyable  readonly  />
+    </n-input-group>
+  </div>
+    </div>
+  </div>
+</div>
+
+<style>
+
+</style>

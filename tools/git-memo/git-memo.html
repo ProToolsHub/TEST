@@ -1,0 +1,25 @@
+<div class="tool-container git-memo-tool">
+  <div class="tool-header">
+    <h2>Git Memo</h2>
+    <p>Un outil utile pour les développeurs et professionnels IT</p>
+  </div>
+  
+  <div class="tool-content">
+    <!-- Contenu converti depuis Vue.js -->
+    <div class="tool-main">
+        <div>
+    <Memo />
+  </div>
+    </div>
+  </div>
+</div>
+
+<style>
+::v-deep(pre) {
+  margin: 0;
+  padding: 15px 22px;
+  background-color: v-bind('themeVars.cardColor');
+  border-radius: 4px;
+  overflow: auto;
+}
+</style>

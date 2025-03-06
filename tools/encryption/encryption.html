@@ -1,0 +1,74 @@
+<div class="tool-container encryption-tool">
+  <div class="tool-header">
+    <h2>Encryption</h2>
+    <p>Un outil utile pour les développeurs et professionnels IT</p>
+  </div>
+  
+  <div class="tool-content">
+    <!-- Contenu converti depuis Vue.js -->
+    <div class="tool-main">
+        <c-card title="Encrypt">
+    <div flex gap-3>
+      <c-input-text
+        v-model
+        label="Your text:"
+        placeholder="The string to cypher"
+        rows="4"
+        multiline raw-text monospace autosize flex-1
+      />
+      <div flex flex-1 flex-col gap-2>
+        <c-input-text v-model label="Your secret key:" clearable raw-text />
+
+        <c-select
+          v-model
+          label="Encryption algorithm:"
+          
+        />
+      </div>
+    </div>
+    <c-input-text
+      label="Your text encrypted:"
+      
+      rows="3"
+      placeholder="Your string hash"
+      multiline monospace readonly autosize mt-5
+    />
+  </c-card>
+  <c-card title="Decrypt">
+    <div flex gap-3>
+      <c-input-text
+        v-model
+        label="Your encrypted text:"
+        placeholder="The string to cypher"
+        rows="4"
+        multiline raw-text monospace autosize flex-1
+      />
+      <div flex flex-1 flex-col gap-2>
+        <c-input-text v-model label="Your secret key:" clearable raw-text />
+
+        <c-select
+          v-model
+          label="Encryption algorithm:"
+          
+        />
+      </div>
+    </div>
+    <c-alert  type="error" mt-12 title="Error while decrypting">
+      {{ decryptError }}
+    </c-alert>
+    <c-input-text
+      v-else
+      label="Your decrypted text:"
+      
+      placeholder="Your string hash"
+      rows="3"
+      multiline monospace readonly autosize mt-5
+    />
+  </c-card>
+    </div>
+  </div>
+</div>
+
+<style>
+
+</style>

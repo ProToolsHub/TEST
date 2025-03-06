@@ -1,0 +1,57 @@
+<div class="tool-container email-normalizer-tool">
+  <div class="tool-header">
+    <h2>Email Normalizer</h2>
+    <p>Normalize email addresses to a standard format for easier comparison. Useful for deduplication and data cleaning.</p>
+  </div>
+  
+  <div class="tool-content">
+    <!-- Contenu converti depuis Vue.js -->
+    <div class="tool-main">
+        <div>
+    <div class="mb-2">
+      Raw emails to normalize:
+    </div>
+    <c-input-text
+      v-model
+      placeholder="Put your emails here (one per line)..."
+      rows="3"
+      multiline
+      autocomplete="off"
+      autocorrect="off"
+      autocapitalize="off"
+      spellcheck="false"
+      autofocus
+      monospace
+    />
+
+    <div class="mb-2 mt-4">
+      Normalized emails:
+    </div>
+    <c-input-text
+      
+      placeholder="Normalized emails will appear here..."
+      rows="3"
+      autocomplete="off"
+      autocorrect="off"
+      autocapitalize="off"
+      spellcheck="false"
+      multiline
+      readonly
+      monospace
+    />
+    <div class="mt-4 flex justify-center gap-2">
+      <c-button >
+        Clear emails
+      </c-button>
+      <c-button  >
+        Copy normalized emails
+      </c-button>
+    </div>
+  </div>
+    </div>
+  </div>
+</div>
+
+<style>
+
+</style>

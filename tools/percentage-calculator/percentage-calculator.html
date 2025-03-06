@@ -1,0 +1,61 @@
+<div class="tool-container percentage-calculator-tool">
+  <div class="tool-header">
+    <h2>Percentage Calculator</h2>
+    <p>Un outil utile pour les développeurs et professionnels IT</p>
+  </div>
+  
+  <div class="tool-content">
+    <!-- Contenu converti depuis Vue.js -->
+    <div class="tool-main">
+        <div style="flex: 0 0 100%">
+    <div style="margin: 0 auto; max-width: 600px">
+      <c-card mb-3>
+        <div mb-3 sm:hidden>
+          What is
+        </div>
+        <div flex gap-2>
+          <div hidden pt-1 sm:block style="min-width: 48px;">
+            What is
+          </div>
+          <n-input-number v-model data-test-id="percentageX" placeholder="X" />
+          <div min-w-fit pt-1>
+            % of
+          </div>
+          <n-input-number v-model data-test-id="percentageY" placeholder="Y" />
+          <input-copyable v-model data-test-id="percentageResult" readonly placeholder="Result" style="max-width: 150px;" />
+        </div>
+      </c-card>
+
+      <c-card mb-3>
+        <div mb-3 sm:hidden>
+          X is what percent of Y
+        </div>
+        <div flex gap-2>
+          <n-input-number v-model data-test-id="numberX" placeholder="X" />
+          <div hidden min-w-fit pt-1 sm:block>
+            is what percent of
+          </div>
+          <n-input-number v-model data-test-id="numberY" placeholder="Y" />
+          <input-copyable v-model data-test-id="numberResult" readonly placeholder="Result" style="max-width: 150px;" />
+        </div>
+      </c-card>
+
+      <c-card mb-3>
+        <div mb-3>
+          What is the percentage increase/decrease
+        </div>
+        <div flex gap-2>
+          <n-input-number v-model data-test-id="numberFrom" placeholder="From" />
+          <n-input-number v-model data-test-id="numberTo" placeholder="To" />
+          <input-copyable v-model data-test-id="percentageIncreaseDecrease" readonly placeholder="Result" style="max-width: 150px;" />
+        </div>
+      </c-card>
+    </div>
+  </div>
+    </div>
+  </div>
+</div>
+
+<style>
+
+</style>

@@ -1,0 +1,28 @@
+<div class="tool-container components-tool">
+  <div class="tool-header">
+    <h2>Components</h2>
+    <p>Un outil utile pour les développeurs et professionnels IT</p>
+  </div>
+  
+  <div class="tool-content">
+    <!-- Contenu converti depuis Vue.js -->
+    <div class="tool-main">
+        <div flex flex-col gap-2>
+    <c-table  >
+      <template #validityPeriod="{ value }">
+        <c-key-value-list
+          :items="[{
+            label: 'Not before',
+            value: value.notBefore,
+          }, {
+            label: 'Not after',
+            value: value.notAfter,
+          }]"
+        />
+    </div>
+  </div>
+</div>
+
+<style>
+
+</style>

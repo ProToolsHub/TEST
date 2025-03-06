@@ -1,0 +1,74 @@
+<div class="tool-container html-entities-tool">
+  <div class="tool-header">
+    <h2>Html Entities</h2>
+    <p>Un outil utile pour les développeurs et professionnels IT</p>
+  </div>
+  
+  <div class="tool-content">
+    <!-- Contenu converti depuis Vue.js -->
+    <div class="tool-main">
+        <c-card title="Escape html entities">
+    <n-form-item label="Your string :">
+      <c-input-text
+        v-model
+        multiline
+        placeholder="The string to escape"
+        rows="3"
+        autosize
+        raw-text
+      />
+    </n-form-item>
+
+    <n-form-item label="Your string escaped :">
+      <c-input-text
+        multiline
+        readonly
+        placeholder="Your string escaped"
+        
+        rows="3"
+        autosize
+      />
+    </n-form-item>
+
+    <div flex justify-center>
+      <c-button >
+        Copy
+      </c-button>
+    </div>
+  </c-card>
+  <c-card title="Unescape html entities">
+    <n-form-item label="Your escaped string :">
+      <c-input-text
+        v-model
+        multiline
+        placeholder="The string to unescape"
+        rows="3"
+        autosize
+        raw-text
+      />
+    </n-form-item>
+
+    <n-form-item label="Your string unescaped :">
+      <c-input-text
+        
+        multiline
+        readonly
+        placeholder="Your string unescaped"
+        rows="3"
+        autosize
+      />
+    </n-form-item>
+
+    <div flex justify-center>
+      <c-button >
+        Copy
+      </c-button>
+    </div>
+  </c-card>
+    </div>
+  </div>
+</div>
+
+<style>
+
+</style>

@@ -1,0 +1,74 @@
+/* Thème clair */
+.theme-light {
+    --accent-color: #007bff;
+    --accent-color-light: rgba(0, 123, 255, 0.25);
+    --accent-color-dark: #0056b3;
+    
+    --bg-color: #f8f9fa;
+    --text-color: #212529;
+    --text-muted: #6c757d;
+    
+    --border-color: #dee2e6;
+    --hover-color: #f1f3f5;
+    --active-color: #e9f2fe;
+    
+    --header-bg: #ffffff;
+    --sidebar-bg: #f8f9fa;
+    --content-bg: #ffffff;
+    --footer-bg: #f8f9fa;
+    --modal-bg: #ffffff;
+    --card-bg: #ffffff;
+    
+    --input-bg: #ffffff;
+    --button-bg: #f8f9fa;
+    --button-text: #212529;
+    --button-hover-bg: #e9ecef;
+    
+    --error-bg: #fff5f5;
+    --error-color: #dc3545;
+    --error-text: #212529;
+    
+    --success-bg: #f4faf6;
+    --success-color: #28a745;
+    --success-text: #212529;
+  }
+  
+  /* Thème sombre */
+  .theme-dark {
+    --accent-color: #0d6efd;
+    --accent-color-light: rgba(13, 110, 253, 0.25);
+    --accent-color-dark: #0a58ca;
+    
+    --bg-color: #212529;
+    --text-color: #f8f9fa;
+    --text-muted: #adb5bd;
+    
+    --border-color: #495057;
+    --hover-color: #2b3035;
+    --active-color: #0d3663;
+    
+    --header-bg: #343a40;
+    --sidebar-bg: #2b3035;
+    --content-bg: #343a40;
+    --footer-bg: #212529;
+    --modal-bg: #343a40;
+    --card-bg: #2b3035;
+    
+    --input-bg: #212529;
+    --button-bg: #495057;
+    --button-text: #f8f9fa;
+    --button-hover-bg: #343a40;
+    
+    --error-bg: #3a2021;
+    --error-color: #ef5654;
+    --error-text: #f8f9fa;
+    
+    --success-bg: #1a2e21;
+    --success-color: #4ad364;
+    --success-text: #f8f9fa;
+  }
+  
+  /* Animation de transition entre thèmes */
+  body, button, input, select, textarea {
+    transition: background-color 0.3s, color 0.3s, border-color 0.3s;
+  }

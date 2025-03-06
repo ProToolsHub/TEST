@@ -1,0 +1,41 @@
+<div class="tool-container color-converter-tool">
+  <div class="tool-header">
+    <h2>Color Converter</h2>
+    <p>Un outil utile pour les développeurs et professionnels IT</p>
+  </div>
+  
+  <div class="tool-content">
+    <!-- Contenu converti depuis Vue.js -->
+    <div class="tool-main">
+        <c-card>
+    <template  >
+      <input-copyable
+        
+        v-model
+        
+        
+        label-position="left"
+        label-width="100px"
+        label-align="right"
+        
+        
+        raw-text
+        clearable
+        mt-2
+        @update
+      />
+
+      <n-form-item v-else-if="type === 'color-picker'"  label-width="100" label-placement="left" >
+        <n-color-picker
+          v-model
+          placement="bottom-end"
+          @update
+        />
+      </n-form-item>
+    </div>
+  </div>
+</div>
+
+<style>
+
+</style>

@@ -1,0 +1,63 @@
+<div class="tool-container bip39-generator-tool">
+  <div class="tool-header">
+    <h2>Bip39 Generator</h2>
+    <p>Un outil utile pour les développeurs et professionnels IT</p>
+  </div>
+  
+  <div class="tool-content">
+    <!-- Contenu converti depuis Vue.js -->
+    <div class="tool-main">
+        <div>
+    <n-grid cols="3" x-gap="12">
+      <n-gi span="1">
+        <c-select
+          v-model
+          searchable
+          label="Language:"
+          
+        />
+      </n-gi>
+      <n-gi span="2">
+        <n-form-item
+          label="Entropy (seed):"
+          
+          
+        >
+          <n-input-group>
+            <c-input-text v-model placeholder="Your string..." />
+
+            <c-button >
+              <n-icon size="22">
+                <Refresh />
+              </n-icon>
+            </c-button>
+            <c-button >
+              <n-icon size="22">
+                <Copy />
+              </n-icon>
+            </c-button>
+          </n-input-group>
+        </n-form-item>
+      </n-gi>
+    </n-grid>
+    <n-form-item
+      label="Passphrase (mnemonic):"
+      
+      
+    >
+      <n-input-group>
+        <c-input-text v-model placeholder="Your mnemonic..." raw-text />
+
+        <c-button >
+          <n-icon size="22"  />
+        </c-button>
+      </n-input-group>
+    </n-form-item>
+  </div>
+    </div>
+  </div>
+</div>
+
+<style>
+
+</style>

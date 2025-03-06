@@ -1,0 +1,61 @@
+<div class="tool-container meta-tag-generator-tool">
+  <div class="tool-header">
+    <h2>Meta Tag Generator</h2>
+    <p>Un outil utile pour les développeurs et professionnels IT</p>
+  </div>
+  
+  <div class="tool-content">
+    <!-- Contenu converti depuis Vue.js -->
+    <div class="tool-main">
+        <div>
+    <div   style="margin-bottom: 15px">
+      <div mb-5px>
+        {{ name }}
+      </div>
+
+      <n-input-group  >
+        <n-input-group-label style="flex: 0 0 110px">
+          {{ label }}
+        </n-input-group-label>
+
+        <c-input-text  v-model  clearable />
+        <n-dynamic-input
+          v-else-if="type === 'input-multiple'"
+          v-model
+          
+          
+          
+          
+        />
+
+        <c-select
+          v-else-if="type === 'select'"
+          v-model
+          w-full
+          
+          
+        />
+      </n-input-group>
+    </div>
+  </div>
+  <div>
+    <n-form-item label="Your meta tags">
+      <TextareaCopyable  language="html" />
+    </n-form-item>
+  </div>
+    </div>
+  </div>
+</div>
+
+<style>
+.n-input-group {
+  margin-bottom: 5px;
+}
+
+::v-deep(.n-form-item-blank) {
+  min-height: 0 !important;
+}
+::v-deep(.n-dynamic-input-item) {
+  margin-bottom: 5px;
+}
+</style>

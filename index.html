@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'; style-src 'self' 'unsafe-inline'; img-src 'self' data:;" />
+    <title>IT-Tools Desktop</title>
+    <link rel="stylesheet" href="assets/css/main.css" />
+    <link rel="stylesheet" href="assets/css/themes.css" />
+  </head>
+  <body>
+    <div id="app">
+      <header>
+        <div class="logo">
+          <img src="assets/icons/app-icon.png" alt="IT-Tools Logo" height="40" />
+          <h1>IT-Tools Desktop</h1>
+        </div>
+        <div class="search-bar">
+          <input type="text" id="search-tools" placeholder="Rechercher un outil..." />
+        </div>
+        <div class="header-controls">
+          <button id="toggle-theme" title="Changer de thème">🌓</button>
+          <button id="settings-button" title="Paramètres">⚙️</button>
+        </div>
+      </header>
+
+      <div class="main-container">
+        <nav class="sidebar">
+          <div class="category">
+            <h3>Outils de texte</h3>
+            <ul>
+              <li><a href="#" data-tool="date-time-converter/date-time-converter.html">Convertisseur de date et heure</a></li>
+            </ul>
+          </div>
+
+          <
+        </nav>
+
+        <main id="content">
+          <div class="welcome-screen">
+            <h2>Bienvenue sur IT-Tools Desktop</h2>
+            <p>Sélectionnez un outil dans le menu de gauche pour commencer.</p>
+            <div class="quick-access">
+              <h3>Outils fréquemment utilisés</h3>
+              <div class="tool-grid" id="frequent-tools">
+                <!-- Sera rempli dynamiquement -->
+              </div>
+            </div>
+          </div>
+        </main>
+      </div>
+
+      <footer>
+        <p>IT-Tools Desktop v1.0.0 - Développé avec Electron</p>
+      </footer>
+    </div>
+
+    <!-- Modal de paramètres -->
+    <div id="settings-modal" class="modal">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h2>Paramètres</h2>
+          <span class="close">&times;</span>
+        </div>
+        <div class="modal-body">
+          <div class="settings-section">
+            <h3>Apparence</h3>
+            <div class="setting-item">
+              <label for="theme-select">Thème:</label>
+              <select id="theme-select">
+                <option value="system">Système</option>
+                <option value="light">Clair</option>
+                <option value="dark">Sombre</option>
+              </select>
+            </div>
+          </div>
+          <div class="settings-section">
+            <h3>Comportement</h3>
+            <div class="setting-item">
+              <label for="remember-tools">Mémoriser les derniers outils utilisés</label>
+              <input type="checkbox" id="remember-tools" checked />
+            </div>
+          </div>
+        </div>
+        <div class="modal-footer">
+          <button id="save-settings">Enregistrer</button>
+          <button id="cancel-settings">Annuler</button>
+        </div>
+      </div>
+    </div>
+
+    <script src="renderer.js"></script>
+    <script src="assets/js/navigation.js"></script>
+  </body>
+</html>

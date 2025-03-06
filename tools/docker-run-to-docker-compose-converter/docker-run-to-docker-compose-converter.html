@@ -1,0 +1,72 @@
+<div class="tool-container docker-run-to-docker-compose-converter-tool">
+  <div class="tool-header">
+    <h2>Docker Run To Docker Compose Converter</h2>
+    <p>Un outil utile pour les développeurs et professionnels IT</p>
+  </div>
+  
+  <div class="tool-content">
+    <!-- Contenu converti depuis Vue.js -->
+    <div class="tool-main">
+        <div>
+    <c-input-text
+      v-model
+      label="Your docker run command:"
+      style="font-family: monospace"
+      multiline
+      raw-text
+      monospace
+      placeholder="Your docker run command to convert..."
+      rows="3"
+    />
+
+    <n-divider />
+
+    <TextareaCopyable  language="yaml" />
+
+    <div mt-5 flex justify-center>
+      <c-button  secondary >
+        Download docker-compose.yml
+      </c-button>
+    </div>
+
+    <div >
+      <n-alert title="This options are not translatable to docker-compose" type="info" mt-5>
+        <ul>
+          <li  >
+            {{ message }}
+          </li>
+        </ul>
+      </n-alert>
+    </div>
+
+    <div >
+      <n-alert
+        title="This options are not yet implemented and therefore haven't been translated to docker-compose"
+        type="warning"
+        mt-5
+      >
+        <ul>
+          <li  >
+            {{ message }}
+          </li>
+        </ul>
+      </n-alert>
+    </div>
+
+    <div >
+      <n-alert title="The following errors occured" type="error" mt-5>
+        <ul>
+          <li  >
+            {{ message }}
+          </li>
+        </ul>
+      </n-alert>
+    </div>
+  </div>
+    </div>
+  </div>
+</div>
+
+<style>
+
+</style>

@@ -1,0 +1,40 @@
+<div class="tool-container text-to-nato-alphabet-tool">
+  <div class="tool-header">
+    <h2>Text To Nato Alphabet</h2>
+    <p>Un outil utile pour les développeurs et professionnels IT</p>
+  </div>
+  
+  <div class="tool-content">
+    <!-- Contenu converti depuis Vue.js -->
+    <div class="tool-main">
+        <div>
+    <c-input-text
+      v-model
+      label="Your text to convert to NATO phonetic alphabet"
+      placeholder="Put your text here..."
+      clearable
+      mb-5
+    />
+
+    <div >
+      <div mb-2>
+        Your text in NATO phonetic alphabet
+      </div>
+      <c-card>
+        {{ natoText }}
+      </c-card>
+
+      <div mt-3 flex justify-center>
+        <c-button autofocus >
+          Copy NATO string
+        </c-button>
+      </div>
+    </div>
+  </div>
+    </div>
+  </div>
+</div>
+
+<style>
+
+</style>

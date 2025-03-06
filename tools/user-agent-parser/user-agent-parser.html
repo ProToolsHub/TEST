@@ -1,0 +1,43 @@
+<div class="tool-container user-agent-parser-tool">
+  <div class="tool-header">
+    <h2>User Agent Parser</h2>
+    <p>Un outil utile pour les développeurs et professionnels IT</p>
+  </div>
+  
+  <div class="tool-content">
+    <!-- Contenu converti depuis Vue.js -->
+    <div class="tool-main">
+        <div>
+    <n-grid   cols="1 s:2" responsive="screen">
+      <n-gi  >
+        <c-card h-full>
+          <div flex items-center gap-3>
+            <n-icon size="30"   />
+            <span text-lg>{{ heading }}</span>
+          </div>
+
+          <div mt-5 flex gap-2>
+            <span  >
+              <c-tooltip  >
+                <n-tag type="success" size="large" round >
+                  {{ getValue(userAgentInfo) }}
+                </n-tag>
+              </c-tooltip>
+            </span>
+          </div>
+          <div flex flex-col>
+            <span  >
+              <span  op-70>{{ undefinedFallback }}</span>
+            </span>
+          </div>
+        </c-card>
+      </n-gi>
+    </n-grid>
+  </div>
+    </div>
+  </div>
+</div>
+
+<style>
+
+</style>

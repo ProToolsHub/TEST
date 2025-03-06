@@ -1,0 +1,70 @@
+<div class="tool-container base64-file-converter-tool">
+  <div class="tool-header">
+    <h2>Base64 File Converter</h2>
+    <p>Un outil utile pour les développeurs et professionnels IT</p>
+  </div>
+  
+  <div class="tool-content">
+    <!-- Contenu converti depuis Vue.js -->
+    <div class="tool-main">
+        <c-card title="Base64 to file">
+    <n-grid cols="3" x-gap="12">
+      <n-gi span="2">
+        <c-input-text
+          v-model
+          label="File Name"
+          placeholder="Download filename"
+          mb-2
+        />
+      </n-gi>
+      <n-gi>
+        <c-input-text
+          v-model
+          label="Extension"
+          placeholder="Extension"
+          mb-2
+        />
+      </n-gi>
+    </n-grid>
+    <c-input-text
+      v-model
+      multiline
+      placeholder="Put your base64 file string here..."
+      rows="5"
+      
+      mb-2
+    />
+
+    <div flex justify-center py-2>
+      <div id="previewContainer" />
+    </div>
+
+    <div flex justify-center gap-3>
+      <c-button  >
+        Preview image
+      </c-button>
+      <c-button  >
+        Download file
+      </c-button>
+    </div>
+  </c-card>
+
+  <c-card title="File to base64">
+    <c-file-upload title="Drag and drop a file here, or click to select a file"  />
+    <c-input-text  multiline readonly placeholder="File in base64 will be here" rows="5" my-2 />
+
+    <div flex justify-center>
+      <c-button >
+        Copy
+      </c-button>
+    </div>
+  </c-card>
+    </div>
+  </div>
+</div>
+
+<style>
+::v-deep(.n-upload-trigger) {
+  width: 100%;
+}
+</style>
